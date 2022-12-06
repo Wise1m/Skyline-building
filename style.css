@@ -11,7 +11,6 @@
 
 *{
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 body{
@@ -264,29 +263,28 @@ body{
         transparent 10%
     ),
     repeating-linear-gradient(
-        90deg
+        90deg,
         var(--building-color2),
         var(--building-color2) 12%,
-        transparent 12%,
-        transparent 44%
-    )
-    ;
+        var(--window-color2) 12%,
+        var(--window-color2) 44%
+    );
 }
 
 .fb6{
     width: 9%;
     height: 38%;
     background: repeating-linear-gradient(
+        90deg,
         var(--building-color3),
         var(--building-color3) 10%,
         transparent 10%,
         transparent 30%
-    )
+    ),
     repeating-linear-gradient(
         var(--building-color3),
         var(--building-color3) 10%,
         var(--window-color3) 10%,
         var(--window-color3) 30%
-    )
-    ;
+    );
 }
